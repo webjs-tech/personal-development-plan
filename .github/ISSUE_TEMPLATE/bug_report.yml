@@ -1,0 +1,79 @@
+name: 🐞 Bug Report
+description: Create a bug report to help us improve
+title: "bug: "
+labels: ["type: bug"]
+projects: ["webjs-tech/3"]
+body:
+  - type: textarea
+    attributes:
+      label: Provide environment information
+      description: |
+        Run this command in your project root and paste the results in a code block:
+        ```bash
+        npx envinfo --system --binaries --browsers
+        ```
+      render: bash
+      placeholder: |
+        Operating System:
+          Platform: darwin
+          Arch: arm64
+          Version: Darwin Kernel Version 22.5.0
+          Shell: 5.9 - /bin/zsh
+        Binaries:
+          Node: 20.5.1 - /usr/local/bin/node
+          Yarn: 1.22.19 - /usr/local/bin/yarn
+          npm: 9.8.0 - /usr/local/bin/npm
+        Browsers:
+          Chrome: 116.0.5845.96
+          Safari: 17.1
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of the bug, as well as what you expected to happen when encountering it.
+      placeholder: Following the steps from the previous section, I expected A to happen, but I observed B instead
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Link to reproduction
+      description: Please provide a link to a reproduction of the bug. Issues without a reproduction repo may be ignored.
+      placeholder: e.g. website URL, public GitHub repo, or Code Sandbox app
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: To reproduce
+      description: Describe how to reproduce your bug. Steps, code snippets, reproduction repos etc.
+      placeholder: |
+        Example bug report:
+        1. Log in with username/password
+        2. Click "Messages" on the left menu
+        3. Open any message in the list
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Add any other information related to the bug here, screenshots if applicable.
+      placeholder: |
+        I tested my reproduction against different canary releases, and the first one that introduced the bug was "13.4.20-canary.13", since reverting to "13.4.20-canary.12" works.
+
+        or
+
+        I am hosting via Docker with the recommended `output: "standalone"` option", and if I remove that option or try a different hosting option, I cannot reproduce the same issue.
+    validations:
+      required: false
+  - type: checkboxes
+    id: validations
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Check that there isn't already an issue that reports the same bug to avoid creating duplicates.
+          required: true
+        - label: Check that this is a concrete bug. For Q&A, please open a [GitHub Discussion](https://github.com/webjs-tech/reserv-me/discussions/new?category=ideas) instead.
+          required: true
+        - label: The provided reproduction is a [minimal reproducible](https://stackoverflow.com/help/minimal-reproducible-example) of the bug.
+          required: true

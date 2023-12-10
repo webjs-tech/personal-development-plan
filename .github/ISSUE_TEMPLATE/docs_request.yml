@@ -1,0 +1,38 @@
+name: "📚 Documentation"
+description: Updating documentation (e.g. README, Wiki, Guides etc.)
+title: "docs: "
+labels: ["type: documentation"]
+projects: ["webjs-tech/3"]
+body:
+  - type: markdown
+    attributes:
+      value: Before opening this issue to request a docs improvement, is this something you can help us with? Your contributions are welcomed and appreciated. See our [Docs Contribution Guide](https://github.com/webjs-tech/reserv-me/blob/main/.github/CONTRIBUTING.md) to learn how to edit docs.
+  - type: markdown
+    attributes:
+      value: Thank you for helping us improve the docs!
+  - type: textarea
+    attributes:
+      label: What is the improvement or update you wish to see?
+      description: "Example: I would like to see more examples of how to use the `<Link>` component. Or, the `<Link>` component docs are missing information."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Is there any context that might help us understand?
+      description: A clear description of any added context that might help us understand.
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: Does the docs page already exist? Please link to it.
+      description: "Example: https://reserv.me/docs/api-reference/authentication"
+    validations:
+      required: false
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Check that there isn't already an issue requesting the same doc request.
+          required: true

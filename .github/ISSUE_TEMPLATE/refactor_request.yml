@@ -1,0 +1,44 @@
+name: ♻️ Refactor
+description: Something that needs improving while not changing functionality
+title: "refactor: "
+labels: ["type: refactor"]
+projects: ["webjs-tech/3"]
+body:
+  - type: textarea
+    attributes:
+      label: Describe the refactor you'd like to request
+      description: Please describe the specific code or codebase area that you believe needs refactoring, and provide reasons why the refactor is necessary.
+      placeholder: We have noticed that certain components in our React application are causing performance issues during rendering, resulting in slow UI updates and reduced responsiveness. Therefore, we are requesting a refactor to improve the performance of component rendering.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed refactor solution
+      description: Describe the approach or solution you suggest for the refactor. Provide any relevant information or considerations.
+      placeholder: |
+        The proposed solution involves the following steps:
+          
+        1. Component Profiling: Perform profiling of the application's components to identify the ones that are contributing the most to rendering performance issues. This profiling can be done using tools such as React Profiler or browser performance profiling tools.
+        2. Memoization and PureComponent: Apply memoization techniques and utilize React's PureComponent or React.memo to optimize component rendering. By memoizing expensive calculations and ensuring that components only re-render when necessary, we can improve rendering performance.
+        3. Virtualization: Implement virtualization techniques, such as React Virtualized or React Window, for long lists or large data sets. Virtualization ensures that only the visible portion of the list is rendered, reducing the number of DOM elements and improving rendering performance.
+        4. Code Splitting and Lazy Loading: Analyze the application's bundle size and consider code splitting and lazy loading techniques to reduce the initial load time and improve overall performance. This involves splitting the application into smaller chunks and loading them on demand.
+        5. Performance Testing: After implementing the refactor, perform performance testing and benchmarking to measure the impact on rendering performance. Compare the rendering metrics before and after the refactor to ensure that the optimizations have effectively improved component rendering performance.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Add any other information related to the refactor request here, such as related issues, discussions, or code examples.
+      placeholder: |
+        - Related Issue: #1234
+        - Discussion: [Link to Discussion](https://github.com/webjs-tech/reserv-me/issues/5678)
+    validations:
+      required: false
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Check that there isn't already an issue requesting the same refactor request.
+          required: true

@@ -1,0 +1,43 @@
+# This template is heavily inspired by the Next.js's template:
+# See here: https://github.com/vercel/next.js/blob/canary/.github/ISSUE_TEMPLATE/3.feature_request.yml
+
+name: 🛠 Feature Request
+description: Create a feature request for the core packages
+title: "feat: "
+labels: ["type: enhancement"]
+projects: ["webjs-tech/3"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to file a feature request. Please fill out this form as completely as possible.
+  - type: textarea
+    attributes:
+      label: Describe the feature you'd like to request
+      description: Please describe the feature as clear and concise as possible. Remember to add context as to why you believe this feature is needed.
+      placeholder: I would like to request the addition of a dark mode theme for the website. Currently, the website only supports a light theme, and I believe adding a dark mode option would greatly enhance the user experience, especially for users who prefer dark interfaces.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe the solution you'd like to see
+      description: Please describe the solution you would like to see. Adding example usage is a good way to provide context.
+      placeholder: I envision the dark mode theme to have a dark color palette with high contrast. It should be easy on the eyes and provide a pleasant browsing experience in low-light conditions. It would be great if the website could remember the user's preference and automatically switch between light and dark mode based on their system settings.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Add any other information related to the feature here. If your feature request is related to any issues or discussions, link them here.
+      placeholder: |
+        This feature request is related to the ongoing discussion in Issue #123, where users have expressed interest in having a dark mode option. I believe this feature would attract more users and improve the overall accessibility of the website.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Check that there isn't already an issue requesting the same feature.
+          required: true

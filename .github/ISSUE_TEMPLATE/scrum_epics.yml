@@ -1,0 +1,67 @@
+name: "🚀 Epic"
+description: "Create a new epic to track a larger body of work"
+title: "epic: "
+labels: ["type: epic"]
+projects: ["webjs-tech/3"]
+body:
+  - type: textarea
+    attributes:
+      label: "Epic Overview"
+      description: "Write the epic description and provide an overview of the desired functionality or feature set."
+      placeholder: The goal of this epic is to enhance the user authentication process to provide a more secure and seamless experience for our users.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "User Stories"
+      description: "List the user stories that are part of this epic. Provide links or references to related user stories."
+      placeholder: |
+        - [ ] As a user, I want to be able to sign up using my email address and set a strong password.
+        - [ ] As a user, I want the option to authenticate using my Google or Facebook account.
+        - [ ] As a user, I want to be able to reset my password if I forget it.
+        - [ ] As a user, I want to receive email notifications for successful login attempts.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Acceptance Criteria"
+      description: "Define the acceptance criteria for the epic. These criteria will be used to determine when the epic is considered complete."
+      placeholder: |
+        - [ ] User registration should include validation for password strength.
+        - [ ] Integration with Google and Facebook APIs should provide a seamless authentication process.
+        - [ ] Password reset functionality should require proper verification steps.
+        - [ ] Email notifications for successful login attempts should be sent to the user's registered email address.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Dependencies"
+      description: "Add any other information related to the epic, such as related issues or discussions."
+      placeholder: |
+        - [ ] Issue #123: User Management System (already implemented)
+        - [ ] Issue #456: Integration with Google and Facebook APIs (in progress)
+        - [ ] Issue #789: Email Service Provider integration (to be implemented)
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Definition of Done"
+      description: "Define the criteria that need to be met for the epic to be considered done."
+      placeholder: |
+        - The user stories are implemented and tested.
+        - The acceptance criteria are met.
+        - The code is reviewed and merged into the main branch.
+      value: |
+        - The user stories are implemented and tested.
+        - The acceptance criteria are met.
+        - The code is reviewed and merged into the main branch.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Check that there isn't already an issue requesting the same epic.
+          required: true

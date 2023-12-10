@@ -1,0 +1,79 @@
+name: 📝 User Story
+description: Create a user story to define a new feature or improvement
+title: "user story: "
+labels: ["type: user story"]
+projects: ["webjs-tech/3"]
+body:
+  - type: textarea
+    attributes:
+      label: As a [role]
+      description: Describe the role of the user or stakeholder who will benefit from this user story.
+      placeholder: As a user
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: I want [feature]
+      description: Describe the specific feature or improvement that is desired.
+      placeholder: I want to be able to rate and write reviews for products
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: So that [benefit]
+      description: Describe the expected benefit or outcome of implementing this user story.
+      placeholder: so that I can share my feedback and help others make informed choices
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Acceptance criteria
+      description: Provide any specific criteria or conditions that must be met for this user story to be considered complete.
+      placeholder: |
+        - The product detail page should have a rating component where users can select a rating from 1 to 5.
+        - When a user submits a rating, it should be saved and associated with the corresponding product.
+        - The product detail page should display the average rating based on all the user ratings.
+        - Users should be able to write a review for a product, including a title and a detailed description.
+        - The reviews should be displayed on the product detail page, showing the title, description, and the user who wrote the review.
+        - Users should be able to edit or delete their own reviews.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Tasks"
+      description: "Add any other information related to the epic, such as related issues or discussions."
+      placeholder: |
+        - Issue #123: Create an API endpoint to save user reviews for products.
+        - Issue #456: Display the reviews on the product detail page.
+        - Issue #789: Implement the ability for users to edit or delete their own reviews.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: "Definition of Done"
+      description: "Define the criteria that need to be met for the epic to be considered done."
+      placeholder: |
+        - The user stories are implemented and tested.
+        - The acceptance criteria are met.
+        - The code is reviewed and merged into the main branch.
+      value: |
+        - The user stories are implemented and tested.
+        - The acceptance criteria are met.
+        - The code is reviewed and merged into the main branch.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Add any other relevant information related to the user story, such as related issues, discussions, or examples.
+      placeholder: |
+        - Design mockups: [link to the design mockups]
+        - API documentation: [link to the API documentation]
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Check that there isn't already an issue requesting the same user story.
+          required: true
