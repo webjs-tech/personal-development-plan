@@ -5,7 +5,7 @@ name: 🛠 Feature Request
 description: Create a feature request for the core packages
 title: "feat: "
 labels: ["type: enhancement"]
-projects: ["webjs-tech/3"]
+projects: ["webjs-tech/12"]
 body:
   - type: markdown
     attributes:

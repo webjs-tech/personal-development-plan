@@ -2,7 +2,7 @@ name: "📚 Documentation"
 description: Updating documentation (e.g. README, Wiki, Guides etc.)
 title: "docs: "
 labels: ["type: documentation"]
-projects: ["webjs-tech/3"]
+projects: ["webjs-tech/12"]
 body:
   - type: markdown
     attributes:

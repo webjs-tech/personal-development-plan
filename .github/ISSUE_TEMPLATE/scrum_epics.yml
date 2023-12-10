@@ -2,7 +2,7 @@ name: "🚀 Epic"
 description: "Create a new epic to track a larger body of work"
 title: "epic: "
 labels: ["type: epic"]
-projects: ["webjs-tech/3"]
+projects: ["webjs-tech/12"]
 body:
   - type: textarea
     attributes:

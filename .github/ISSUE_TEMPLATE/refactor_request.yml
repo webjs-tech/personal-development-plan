@@ -2,7 +2,7 @@ name: ♻️ Refactor
 description: Something that needs improving while not changing functionality
 title: "refactor: "
 labels: ["type: refactor"]
-projects: ["webjs-tech/3"]
+projects: ["webjs-tech/12"]
 body:
   - type: textarea
     attributes:

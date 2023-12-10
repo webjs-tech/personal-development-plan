@@ -2,7 +2,7 @@ name: 👷 DevOps
 description: CI/CD and other DevOps concerns e.g. Updating the build, code analysis, test, deploy, application monitoring etc.
 title: "devops: "
 labels: ["area: devops"]
-projects: ["webjs-tech/3"]
+projects: ["webjs-tech/12"]
 body:
   - type: textarea
     attributes:

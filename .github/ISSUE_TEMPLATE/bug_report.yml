@@ -2,7 +2,7 @@ name: 🐞 Bug Report
 description: Create a bug report to help us improve
 title: "bug: "
 labels: ["type: bug"]
-projects: ["webjs-tech/3"]
+projects: ["webjs-tech/12"]
 body:
   - type: textarea
     attributes:

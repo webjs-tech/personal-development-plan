@@ -2,7 +2,7 @@ name: 📝 User Story
 description: Create a user story to define a new feature or improvement
 title: "user story: "
 labels: ["type: user story"]
-projects: ["webjs-tech/3"]
+projects: ["webjs-tech/12"]
 body:
   - type: textarea
     attributes:
